@@ -1,0 +1,19 @@
+.service-card {
+    background: linear-gradient(135deg, white, #f8f8f8);
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-card .card-title {
+    font-weight: 600;
+    color: var(--turquesa);
+}

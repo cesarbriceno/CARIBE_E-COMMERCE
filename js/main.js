@@ -9,10 +9,11 @@ const routes = {
     '#contact': 'contact',
     '#login': 'login',
     '#register': 'register'
+
 };
 
 // Componentes comunes que se cargan en todas las páginas
-const commonComponents = ['header', 'footer'];
+const commonComponents = ['header', 'footer', 'boton-slide'];
 
 // Variables para seguimiento del estado de la aplicación
 let currentPage = '';

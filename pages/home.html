@@ -1,14 +1,59 @@
-<!-- Sección Hero -->
-<section class="hero-section">
-    <div class="container">
-        <div class="hero-content">
-            <h1>Descubre el Caribe Colombiano</h1>
-            <p class="lead">Conectamos microempresarios con turistas e inversionistas para impulsar el desarrollo regional</p>
-            <a href="#products" class="btn btn-primary btn-lg">Explorar Productos</a>
-            <a href="#services" class="btn btn-secondary btn-lg ms-2">Servicios Turísticos</a>
-        </div>
+
+<!-- HERO CARRUSEL -->
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade vh-100" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-</section>
+  
+    <div class="carousel-inner">
+  
+      <!-- SLIDE 1 -->
+      <div class="carousel-item active vh-100 position-relative">
+        <img src="imagenes/palmas.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
+        <div class="overlay w-100 h-100"></div>
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1 class="fw-bold text-shadow">Descubre el Caribe Colombiano</h1>
+          <p class="lead text-shadow">Conectamos microempresarios con turistas e inversionistas para impulsar el desarrollo regional.</p>
+          <div id="btn-slide"></div>  
+        </div>
+      </div>
+  
+      <!-- SLIDE 2 -->
+      <div class="carousel-item vh-100 position-relative">
+        <img src="../assets/slide-2-background.png" class="d-block w-100 h-100 object-fit-cover" alt="...">
+        <div class="overlay w-100 h-100"></div>
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1 class="fw-bold text-shadow">Explora la naturaleza y la cultura</h1>
+          <p class="lead text-shadow">Vive experiencias únicas en los paisajes naturales del Caribe y apoya a comunidades locales.</p>
+          <div id="btn-slide"></div>  
+        </div>
+      </div>
+  
+      <!-- SLIDE 3 -->
+      <div class="carousel-item vh-100 position-relative">
+        <img src="imagenes/mercado-artesanal.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
+        <div class="overlay w-100 h-100"></div>
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1 class="fw-bold text-shadow">Impulsa el talento local</h1>
+          <p class="lead text-shadow">Conoce emprendedores y artesanos que mantienen viva la identidad del Caribe colombiano.</p>
+          <div id="boton-slide"></div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+  
 
 <!-- Categorías -->
 <section class="category-section">
@@ -55,14 +100,14 @@
     </div>
 </section>
 
-<!-- Productos Destacados con gradiente sunset -->
+<!-- Productos Destacados (feactured) con gradiente sunset -->
 <section class="featured-section py-5 sunset-gradient">
     <div class="container">
         <h2 class="section-title" style="color: white;">Productos Destacados</h2>
         <div class="row">
             <div class="col-md-6">
                 <div class="featured-product">
-                    <img src="/api/placeholder/600/400" alt="Artesanías en palma" class="img-fluid w-100">
+                    <img src="../assets/coleccion-artesania-palma.png" alt="Artesanías en palma" class="img-fluid w-100">
                     <div class="featured-overlay">
                         <h3>Colección de Artesanías</h3>
                         <p>Descubre nuestras artesanías hechas a mano por maestros artesanos</p>
@@ -75,7 +120,7 @@
             </div>
             <div class="col-md-6">
                 <div class="featured-product">
-                    <img src="/api/placeholder/600/400" alt="Tour por manglares" class="img-fluid w-100">
+                    <img src="../assets/experiencias-tour-manglares.png" alt="Tour por manglares" class="img-fluid w-100">
                     <div class="featured-overlay">
                         <h3>Experiencias Turísticas</h3>
                         <p>Vive experiencias únicas con nuestros guías locales</p>
@@ -130,27 +175,24 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        "Los tours<div class="col-md-4">
-                            <div class="testimonial-card">
-                                <div class="testimonial-text">
-                                    "Los tours que reservé a través de CaribeTienda fueron la mejor parte de mi viaje. Guías locales con un conocimiento profundo de la región y experiencias auténticas."
-                                </div>
-                                <div class="testimonial-author">Juan Pérez, Medellín</div>
-                            </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Los tours que reservé a través de CaribeTienda fueron la mejor parte de mi viaje. Guías locales con un conocimiento profundo de la región y experiencias auténticas."
                         </div>
-                        <div class="col-md-4">
-                            <div class="testimonial-card">
-                                <div class="testimonial-text">
-                                    "Como microempresaria, esta plataforma me ha permitido llegar a clientes que nunca hubiera imaginado. Mi negocio ha crecido significativamente."
-                                </div>
-                                <div class="testimonial-author">Ana Gómez, Cartagena</div>
-                            </div>
-                        </div>
+                        <div class="testimonial-author">Juan Pérez, Medellín</div>
                     </div>
                 </div>
-            </section>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Como microempresaria, esta plataforma me ha permitido llegar a clientes que nunca hubiera imaginado. Mi negocio ha crecido significativamente."
+                        </div>
+                        <div class="testimonial-author">Ana Gómez, Cartagena</div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
             
             <!-- Para Inversionistas -->
             <section class="investor-section py-5">

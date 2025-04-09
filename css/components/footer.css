@@ -1,1 +1,56 @@
-/* Archivo vacío */
+footer {
+    background-color: rgb(206, 123, 14);
+    color: rgb(243, 229, 229);
+    padding: 50px 0 20px;
+}
+
+.footer-links h5 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color:darkolivegreen;
+    padding-left: 5px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: rgb(255, 145, 0) ;
+    transform: translateY(-3px);
+}
+
+.copyright {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
