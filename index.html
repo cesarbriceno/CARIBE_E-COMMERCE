@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataforma de gestión de inventarios y logística para microempresarios de la región Caribe de Colombia. Conectando productos locales con turistas e inversionistas.">
+    <title>CaribeTienda - Plataforma para Microempresarios del Caribe</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Cargar estilos específicos de la página actual -->
+    <div id="page-styles"></div>
+</head>
+<body>
+    <!-- Aquí se cargará el encabezado -->
+    <div id="header-container"></div>
+    
+    <!-- Contenido principal que cambiará según la página -->
+    <main id="main-content" style="background-color: #ffffff; color: #333;">
+        <!-- El contenido de las páginas se cargará aquí -->
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Productos Destacados</h2>
+            <div class="row g-4 align-items-stretch"> <!-- Agregar g-4 para espaciado y align-items-stretch para igualar alturas -->
+                <div class="col-md-6 d-flex"> <!-- Agregar d-flex para que el contenido interno se ajuste -->
+                    <div class="featured-product flex-fill"> <!-- Agregar flex-fill para que ocupe toda la altura disponible -->
+                        <img src="/api/placeholder/600/400" alt="Artesanías en palma" class="img-fluid w-100">
+                        <div class="featured-overlay">
+                            <h3>Colección de Artesanías</h3>
+                            <p>Descubre nuestras artesanías hechas a mano por maestros artesanos</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">Desde $25.000</span>
+                                <a href="#products?category=artesanias" class="btn btn-primary btn-sm">Ver Colección</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex"> <!-- Agregar d-flex para que el contenido interno se ajuste -->
+                    <div class="featured-product flex-fill"> <!-- Agregar flex-fill para que ocupe toda la altura disponible -->
+                        <img src="/api/placeholder/600/400" alt="Tour por manglares" class="img-fluid w-100">
+                        <div class="featured-overlay">
+                            <h3>Experiencias Turísticas</h3>
+                            <p>Vive experiencias únicas con nuestros guías locales</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">Desde $80.000</span>
+                                <a href="#services" class="btn btn-primary btn-sm">Explorar Tours</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Aquí se cargará el pie de página -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Cargar scripts específicos de la página actual -->
+    <div id="page-scripts"></div>
+</body>
+</html>

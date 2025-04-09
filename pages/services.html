@@ -1,0 +1,234 @@
+<!-- Banner de la página -->
+<section class="page-banner services-banner">
+    <div class="container">
+        <div class="banner-content">
+            <h1>Servicios Turísticos</h1>
+            <p class="lead">Descubre experiencias auténticas en el Caribe colombiano</p>
+        </div>
+    </div>
+</section>
+
+<!-- Filtros y búsqueda -->
+<section class="filters-section py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <div class="filters-sidebar">
+                    <h4>Filtrar por:</h4>
+                    
+                    <!-- Filtro por tipo de servicio -->
+                    <div class="filter-group">
+                        <h5>Tipo de Experiencia</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="tours" id="type-tours">
+                            <label class="form-check-label" for="type-tours">Tours Guiados</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="adventures" id="type-adventures">
+                            <label class="form-check-label" for="type-adventures">Aventuras</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="workshops" id="type-workshops">
+                            <label class="form-check-label" for="type-workshops">Talleres</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="gastronomy" id="type-gastronomy">
+                            <label class="form-check-label" for="type-gastronomy">Experiencias Gastronómicas</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="cultural" id="type-cultural">
+                            <label class="form-check-label" for="type-cultural">Actividades Culturales</label>
+                        </div>
+                    </div>
+                    
+                    <!-- Filtro por ubicación -->
+                    <div class="filter-group mt-4">
+                        <h5>Ubicación</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="cartagena" id="location-cartagena">
+                            <label class="form-check-label" for="location-cartagena">Cartagena</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="barranquilla" id="location-barranquilla">
+                            <label class="form-check-label" for="location-barranquilla">Barranquilla</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="santamarta" id="location-santamarta">
+                            <label class="form-check-label" for="location-santamarta">Santa Marta</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="guajira" id="location-guajira">
+                            <label class="form-check-label" for="location-guajira">La Guajira</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="cordoba" id="location-cordoba">
+                            <label class="form-check-label" for="location-cordoba">Córdoba</label>
+                        </div>
+                    </div>
+                    
+                    <!-- Filtro por duración -->
+                    <div class="filter-group mt-4">
+                        <h5>Duración</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="half-day" id="duration-half-day">
+                            <label class="form-check-label" for="duration-half-day">Medio día (1-4 horas)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="full-day" id="duration-full-day">
+                            <label class="form-check-label" for="duration-full-day">Día completo (5-8 horas)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="multi-day" id="duration-multi-day">
+                            <label class="form-check-label" for="duration-multi-day">Múltiples días</label>
+                        </div>
+                    </div>
+                    
+                    <!-- Filtro por precio -->
+                    <div class="filter-group mt-4">
+                        <h5>Precio</h5>
+                        <div class="price-slider">
+                            <input type="range" class="form-range" min="0" max="1000000" step="50000" id="price-range">
+                            <div class="d-flex justify-content-between">
+                                <span>$0</span>
+                                <span id="price-value">$500.000</span>
+                                <span>$1.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Botón para aplicar filtros -->
+                    <button class="btn btn-primary w-100 mt-4" id="apply-filters">Aplicar Filtros</button>
+                </div>
+            </div>
+            
+            <div class="col-lg-9">
+                <!-- Barra de búsqueda y ordenamiento -->
+                <div class="search-and-sort mb-4">
+                    <div class="row g-2">
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Buscar experiencias..." id="search-input">
+                                <button class="btn btn-outline-secondary" type="button" id="search-button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-md-end">
+                                <select class="form-select" style="max-width: 200px;" id="sort-select">
+                                    <option value="relevance">Relevancia</option>
+                                    <option value="price-asc">Precio: Menor a Mayor</option>
+                                    <option value="price-desc">Precio: Mayor a Menor</option>
+                                    <option value="rating-desc">Mejor Valorados</option>
+                                    <option value="duration-asc">Duración: Menor a Mayor</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Resultados y etiquetas de filtros aplicados -->
+                <div class="results-info d-flex justify-content-between align-items-center mb-3">
+                    <div class="results-count">
+                        <span id="services-count">0</span> experiencias encontradas
+                    </div>
+                    <div class="applied-filters" id="applied-filters">
+                        <!-- Las etiquetas de filtros aplicados se cargarán dinámicamente aquí -->
+                    </div>
+                </div>
+                
+                <!-- Lista de servicios -->
+                <div class="row" id="services-list">
+                    <!-- Los servicios se cargarán dinámicamente aquí -->
+                    <div class="col-12 text-center py-5">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Cargando...</span>
+                        </div>
+                        <p class="mt-2">Cargando experiencias...</p>
+                    </div>
+                </div>
+                
+                <!-- Paginación -->
+                <nav aria-label="Navegación de servicios" class="mt-4">
+                    <ul class="pagination justify-content-center" id="pagination">
+                        <!-- La paginación se generará dinámicamente -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de servicios destacados -->
+<section class="featured-services-section py-5 beach-gradient">
+    <div class="container">
+        <h2 class="section-title text-white">Experiencias Destacadas</h2>
+        <div class="row" id="featured-services">
+            <!-- Los servicios destacados se cargarán dinámicamente aquí -->
+        </div>
+    </div>
+</section>
+
+<!-- Sección informativa con testimonios -->
+<section class="info-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="section-title text-start">Por qué elegir nuestras experiencias</h2>
+                <p>Todas nuestras experiencias son proporcionadas por guías y emprendedores locales que conocen profundamente su región y cultura. Al elegir nuestros servicios estás:</p>
+                <ul class="check-list">
+                    <li><i class="fas fa-check-circle text-success me-2"></i> Apoyando directamente a las comunidades locales</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i> Viviendo experiencias auténticas y no masificadas</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i> Descubriendo aspectos culturales no accesibles en tours tradicionales</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i> Contribuyendo a la preservación de tradiciones locales</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="testimonial-card mb-3">
+                    <div class="testimonial-text">
+                        "Nuestra experiencia con el tour de pesca tradicional fue increíble. Aprendimos técnicas ancestrales y compartimos con pescadores locales que nos contaron historias fascinantes."
+                    </div>
+                    <div class="testimonial-author">Carolina y Diego, Turistas de Argentina</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "El taller de cocina caribeña fue una revelación. La chef nos enseñó recetas que han pasado de generación en generación y ahora podemos disfrutar de estos sabores en casa."
+                    </div>
+                    <div class="testimonial-author">Michael, Turista de Estados Unidos</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Template para tarjeta de servicio -->
+<template id="service-card-template">
+    <div class="col-md-6 mb-4">
+        <div class="service-card">
+            <img src="" alt="" class="card-img-top service-image">
+            <div class="card-body">
+                <div class="service-labels mb-2">
+                    <span class="badge bg-primary service-type"></span>
+                    <span class="badge bg-info service-duration"></span>
+                </div>
+                <h5 class="card-title service-name"></h5>
+                <p class="card-text service-description"></p>
+                <div class="service-location mb-2">
+                    <i class="fas fa-map-marker-alt text-danger me-1"></i>
+                    <small class="location-name"></small>
+                </div>
+                <div class="service-rating mb-2">
+                    <span class="stars"></span>
+                    <small class="text-muted ms-1 reviews-count"></small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="price service-price"></span>
+                    <a href="#" class="btn btn-sm btn-primary service-link">Ver Detalles</a>
+                </div>
+                <div class="service-provider mt-2">
+                    <small class="text-muted">Ofrecido por: <span class="provider-name"></span></small>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

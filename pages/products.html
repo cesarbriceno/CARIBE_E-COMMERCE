@@ -1,0 +1,169 @@
+<!-- Banner de la página -->
+<section class="page-banner">
+    <div class="container">
+        <div class="banner-content">
+            <h1>Productos del Caribe</h1>
+            <p class="lead">Descubre la riqueza cultural y artesanal de nuestra región</p>
+        </div>
+    </div>
+</section>
+
+<!-- Filtros y búsqueda -->
+<section class="filters-section py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <div class="filters-sidebar">
+                    <h4>Filtrar por:</h4>
+                    
+                    <!-- Filtro por categoría -->
+                    <div class="filter-group">
+                        <h5>Categorías</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="artesanias" id="category-artesanias">
+                            <label class="form-check-label" for="category-artesanias">Artesanías</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="gastronomia" id="category-gastronomia">
+                            <label class="form-check-label" for="category-gastronomia">Gastronomía</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="moda" id="category-moda">
+                            <label class="form-check-label" for="category-moda">Moda</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="joyeria" id="category-joyeria">
+                            <label class="form-check-label" for="category-joyeria">Joyería</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="decoracion" id="category-decoracion">
+                            <label class="form-check-label" for="category-decoracion">Decoración</label>
+                        </div>
+                    </div>
+                    
+                    <!-- Filtro por región -->
+                    <div class="filter-group mt-4">
+                        <h5>Región</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="cartagena" id="region-cartagena">
+                            <label class="form-check-label" for="region-cartagena">Cartagena</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="barranquilla" id="region-barranquilla">
+                            <label class="form-check-label" for="region-barranquilla">Barranquilla</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="santamarta" id="region-santamarta">
+                            <label class="form-check-label" for="region-santamarta">Santa Marta</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="guajira" id="region-guajira">
+                            <label class="form-check-label" for="region-guajira">La Guajira</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="cordoba" id="region-cordoba">
+                            <label class="form-check-label" for="region-cordoba">Córdoba</label>
+                        </div>
+                    </div>
+                    
+                    <!-- Filtro por precio -->
+                    <div class="filter-group mt-4">
+                        <h5>Precio</h5>
+                        <div class="price-slider">
+                            <input type="range" class="form-range" min="0" max="500000" step="10000" id="price-range">
+                            <div class="d-flex justify-content-between">
+                                <span>$0</span>
+                                <span id="price-value">$250.000</span>
+                                <span>$500.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Botón para aplicar filtros -->
+                    <button class="btn btn-primary w-100 mt-4" id="apply-filters">Aplicar Filtros</button>
+                </div>
+            </div>
+            
+            <div class="col-lg-9">
+                <!-- Barra de búsqueda y ordenamiento -->
+                <div class="search-and-sort mb-4">
+                    <div class="row g-2">
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Buscar productos..." id="search-input">
+                                <button class="btn btn-outline-secondary" type="button" id="search-button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-md-end">
+                                <select class="form-select" style="max-width: 200px;" id="sort-select">
+                                    <option value="relevance">Relevancia</option>
+                                    <option value="price-asc">Precio: Menor a Mayor</option>
+                                    <option value="price-desc">Precio: Mayor a Menor</option>
+                                    <option value="name-asc">Nombre: A-Z</option>
+                                    <option value="rating-desc">Mejor Valorados</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Resultados y etiquetas de filtros aplicados -->
+                <div class="results-info d-flex justify-content-between align-items-center mb-3">
+                    <div class="results-count">
+                        <span id="products-count">0</span> productos encontrados
+                    </div>
+                    <div class="applied-filters" id="applied-filters">
+                        <!-- Las etiquetas de filtros aplicados se cargarán dinámicamente aquí -->
+                    </div>
+                </div>
+                
+                <!-- Lista de productos -->
+                <div class="row" id="products-list">
+                    <!-- Los productos se cargarán dinámicamente aquí -->
+                    <div class="col-12 text-center py-5">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Cargando...</span>
+                        </div>
+                        <p class="mt-2">Cargando productos...</p>
+                    </div>
+                </div>
+                
+                <!-- Paginación -->
+                <nav aria-label="Navegación de productos" class="mt-4">
+                    <ul class="pagination justify-content-center" id="pagination">
+                        <!-- La paginación se generará dinámicamente -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Template para tarjeta de producto -->
+<template id="product-card-template">
+    <div class="col-md-4 col-sm-6 mb-4">
+        <div class="product-card">
+            <img src="" alt="" class="card-img-top product-image">
+            <div class="card-body">
+                <h5 class="card-title product-name"></h5>
+                <p class="card-text product-description"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="price product-price"></span>
+                    <button class="btn btn-sm btn-primary add-to-cart-btn">
+                        <i class="fas fa-shopping-cart me-1"></i> Agregar
+                    </button>
+                </div>
+                <div class="product-rating mt-2">
+                    <span class="stars"></span>
+                    <small class="text-muted ms-1 reviews-count"></small>
+                </div>
+                <div class="product-seller mt-2">
+                    <small class="text-muted">Vendido por: <span class="seller-name"></span></small>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
