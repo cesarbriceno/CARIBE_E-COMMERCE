@@ -1,0 +1,60 @@
+
+ body {
+    background:url('../assets/login-backgroun.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 4px 12px 20px rgba(0, 0, 0, 0.267);
+}
+.card-body, .card{
+    background-color:#f0f4f8;
+}
+.card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+.btn-secondary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.btn-secondary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+.form-control {
+    border-radius: 5px;
+}
+.form-check-label {
+    font-size: 0.9rem;
+}
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+.forgot-password a {
+    color: #007bff;
+}
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+.register-link {
+    text-align: center;
+    margin-top: 15px;
+}
+.register-link a {
+    color: #28a745;
+}
+.register-link a:hover {
+    text-decoration: underline;
+}

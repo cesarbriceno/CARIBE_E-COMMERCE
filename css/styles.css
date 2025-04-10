@@ -61,7 +61,6 @@ a {
 .mb-4 {
     margin-bottom: 1.5rem;
 }
-
 footer {
     background-color: rgb(206, 123, 14);
     color: rgb(243, 229, 229);
@@ -105,10 +104,6 @@ footer {
     color: white;
     margin-right: 10px;
     transition: all 0.3s ease;
-}
-.footer {
-    display: none;  /* El footer estará oculto por defecto */
-    position: fixed;
 }
 .social-links a:hover {
     background-color: rgb(255, 145, 0);

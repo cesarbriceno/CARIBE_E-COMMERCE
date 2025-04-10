@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Plataforma de gestión de inventarios y logística para microempresarios de la región Caribe de Colombia. Conectando productos locales con turistas e inversionistas.">
-    <title>CaribeTienda - Plataforma para Microempresarios del Caribe</title>
+    <title>MerCaribe - Plataforma para Microempresarios del Caribe</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Cargar estilos específicos de la página actual -->
 </head>
 <body>
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="/pages/home.html" target="iframe-content">CaribeTienda</a>
+            <a class="navbar-brand" href="/pages/home.html" target="iframe-content">
+                <img src="/assets/Logos/Mercaribe-lineart.png" alt="logo" style="height: 40px; width: auto;">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,7 +38,9 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <a href="/pages/login.html" target="iframe-content" class="btn btn-secondary me-2">Iniciar Sesión</a>
+                    <a href="/pages/login.html" target="iframe-content" class="btn btn-outline-info me-2">Iniciar Sesión</a>
+                    <a href="/pages/register.html" target="iframe-content" class="btn btn-outline-light me-2">Registrarse</a>
+
                     <div class="position-relative ms-2">
                         <button class="btn btn-outline-light" id="cartBtn">
                             <i class="fas fa-shopping-cart"></i>
@@ -49,53 +52,57 @@
         </div>
     </nav>
     
+
+    <!-- aquí se muestra el contenido -->
     <iframe name="iframe-content" width="100%" height="700px" src="/pages/home.html" style="border:none;"></iframe>
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 mb-4">
-                <h5>CaribeTienda</h5>
-                <p>Conectando microempresarios del Caribe colombiano con el mundo, promoviendo el desarrollo económico local y preservando las tradiciones culturales.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>MerCaribe</h5>
+                    <p>Conectando microempresarios del Caribe colombiano con el mundo, promoviendo el desarrollo económico local y preservando las tradiciones culturales.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 footer-links">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul>
+                        <li><a href="/pages/home.html"target="iframe-content">Inicio</a></li>
+                        <li><a href="/pages/products.html" target="iframe-content">Productos</a></li>
+                        <li><a href="/pages/services.html" target="iframe-content">Servicios</a></li>
+                        <li><a href="/pages/about.html" target="iframe-content">Nosotros</a></li>
+                        <li><a href="/pages/contact.html" target="iframe-content">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4 footer-links">
+                    <h5>Categorías</h5>
+                    <ul>
+                        <li><a href="#products?category=artesanias">Artesanías</a></li>
+                        <li><a href="#products?category=gastronomia">Gastronomía</a></li>
+                        <li><a href="#services?category=turismo">Turismo</a></li>
+                        <li><a href="#products?category=moda">Moda</a></li>
+                        <li><a href="#products?category=joyeria">Joyería</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Calle Principal #123, Monteria</p>
+                    <p><i class="fas fa-phone me-2"></i> +57 300 123 4567</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@Mercaribe.com</p>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 mb-4 footer-links">
-                <h5>Enlaces Rápidos</h5>
-                <ul>
-                    <li><a href="/pages/home.html"target="iframe-content">Inicio</a></li>
-                    <li><a href="/pages/products.html" target="iframe-content">Productos</a></li>
-                    <li><a href="/pages/services.html" target="iframe-content">Servicios</a></li>
-                    <li><a href="/pages/about.html" target="iframe-content">Nosotros</a></li>
-                    <li><a href="/pages/contact.html" target="iframe-content">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-4 mb-4 footer-links">
-                <h5>Categorías</h5>
-                <ul>
-                    <li><a href="#products?category=artesanias">Artesanías</a></li>
-                    <li><a href="#products?category=gastronomia">Gastronomía</a></li>
-                    <li><a href="#services?category=turismo">Turismo</a></li>
-                    <li><a href="#products?category=moda">Moda</a></li>
-                    <li><a href="#products?category=joyeria">Joyería</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-4 mb-4">
-                <h5>Contacto</h5>
-                <p><i class="fas fa-map-marker-alt me-2"></i> Calle Principal #123, Cartagena</p>
-                <p><i class="fas fa-phone me-2"></i> +57 300 123 4567</p>
-                <p><i class="fas fa-envelope me-2"></i> info@caribetienda.com</p>
+            <div class="copyright">
+                <p>&copy; 2025 MerCaribe. Todos los derechos reservados.</p>
             </div>
         </div>
-        <div class="copyright">
-            <p>&copy; 2025 CaribeTienda. Todos los derechos reservados.</p>
-        </div>
-    </div>
-</footer>    
+    </footer>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
