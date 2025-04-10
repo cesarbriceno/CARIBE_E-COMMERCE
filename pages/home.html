@@ -1,235 +1,254 @@
-
-<!-- HERO CARRUSEL -->
-<div id="carouselExampleCaptions" class="carousel slide carousel-fade vh-100" data-bs-ride="carousel" data-bs-interval="5000">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-  
-    <div class="carousel-inner">
-  
-      <!-- SLIDE 1 -->
-      <div class="carousel-item active vh-100 position-relative">
-        <img src="imagenes/palmas.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
-        <div class="overlay w-100 h-100"></div>
-        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
-          <h1 class="fw-bold text-shadow">Descubre el Caribe Colombiano</h1>
-          <p class="lead text-shadow">Conectamos microempresarios con turistas e inversionistas para impulsar el desarrollo regional.</p>
-          <div id="btn-slide"></div>  
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Inicio - CaribeTienda</title>
+    <link rel="stylesheet" href="../css/pages/home.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HERO CARRUSEL -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade vh-100" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-      </div>
-  
-      <!-- SLIDE 2 -->
-      <div class="carousel-item vh-100 position-relative">
-        <img src="../assets/slide-2-background.png" class="d-block w-100 h-100 object-fit-cover" alt="...">
-        <div class="overlay w-100 h-100"></div>
-        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
-          <h1 class="fw-bold text-shadow">Explora la naturaleza y la cultura</h1>
-          <p class="lead text-shadow">Vive experiencias únicas en los paisajes naturales del Caribe y apoya a comunidades locales.</p>
-          <div id="btn-slide"></div>  
-        </div>
-      </div>
-  
-      <!-- SLIDE 3 -->
-      <div class="carousel-item vh-100 position-relative">
-        <img src="imagenes/mercado-artesanal.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
-        <div class="overlay w-100 h-100"></div>
-        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
-          <h1 class="fw-bold text-shadow">Impulsa el talento local</h1>
-          <p class="lead text-shadow">Conoce emprendedores y artesanos que mantienen viva la identidad del Caribe colombiano.</p>
-          <div id="boton-slide"></div>
-        </div>
-      </div>
-  
-    </div>
-  
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
-  </div>
-  
-
-<!-- Categorías -->
-<section class="category-section">
-    <div class="container">
-        <h2 class="section-title mb-5">Explora por Categorías</h2>
-        <div class="row">
-            <div class="col-md-3 col-6 mb-4">
-                <div class="category-item">
-                    <div class="category-icon">
-                        <i class="fas fa-gift"></i>
-                    </div>
-                    <h4>Artesanías</h4>
-                    <p>Productos hechos a mano por artesanos locales</p>
-                </div>
+      
+        <div class="carousel-inner">
+      
+          <!-- SLIDE 1 -->
+          <div class="carousel-item active vh-100 position-relative">
+            <img src="../assets/slide-1-background.png" class="d-block w-100 h-100 object-fit-cover" alt="...">
+            <div class="overlay w-100 h-100"></div>
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+              <h1 class="fw-bold text-shadow">Descubre el Caribe Colombiano</h1>
+              <p class="lead text-shadow">Conectamos microempresarios con turistas e inversionistas para impulsar el desarrollo regional.</p>
+              <div class=" d-flex align-items-center">
+                <a href="/pages/products.html" target="iframe-content" class="btn btn-primary btn-lg">Explorar Productos</a>
+                <a href="/pages/services.html" target="iframe-content" class="btn btn-secondary btn-lg ms-2">Servicios Turísticos</a>        
+              </div>      
             </div>
-            <div class="col-md-3 col-6 mb-4">
-                <div class="category-item">
-                    <div class="category-icon">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <h4>Gastronomía</h4>
-                    <p>Delicias y productos típicos de la región</p>
-                </div>
+          </div>
+      
+          <!-- SLIDE 2 -->
+          <div class="carousel-item vh-100 position-relative">
+            <img src="../assets/slide-2-background.png" class="d-block w-100 h-100 object-fit-cover" alt="...">
+            <div class="overlay w-100 h-100"></div>
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+              <h1 class="fw-bold text-shadow">Explora la naturaleza y la cultura</h1>
+              <p class="lead text-shadow">Vive experiencias únicas en los paisajes naturales del Caribe y apoya a comunidades locales.</p>
+              <div class=" d-flex align-items-center">
+                <a href="/pages/products.html" target="iframe-content" class="btn btn-primary btn-lg">Explorar Productos</a>
+                <a href="/pages/services.html" target="iframe-content" class="btn btn-secondary btn-lg ms-2">Servicios Turísticos</a>        
+              </div>
             </div>
-            <div class="col-md-3 col-6 mb-4">
-                <div class="category-item">
-                    <div class="category-icon">
-                        <i class="fas fa-umbrella-beach"></i>
-                    </div>
-                    <h4>Turismo</h4>
-                    <p>Experiencias únicas en el Caribe colombiano</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 mb-4">
-                <div class="category-item">
-                    <div class="category-icon">
-                        <i class="fas fa-tshirt"></i>
-                    </div>
-                    <h4>Moda</h4>
-                    <p>Ropa y accesorios con estilo caribeño</p>
-                </div>
+          </div>
+      
+          <!-- SLIDE 3 -->
+          <div class="carousel-item vh-100 position-relative">
+            <img src="../assets/slide-3-background.png" class="d-block w-100 h-100 object-fit-cover" alt="...">
+            <div class="overlay w-100 h-100"></div>
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+              <h1 class="fw-bold text-shadow">Impulsa el talento local</h1>
+              <p class="lead text-shadow">Conoce emprendedores y artesanos que mantienen viva la identidad del Caribe colombiano.</p>
+              <div class=" d-flex align-items-center">
+                <a href="/pages/products.html" target="iframe-content" class="btn btn-primary btn-lg">Explorar Productos</a>
+                <a href="/pages/services.html" target="iframe-content" class="btn btn-secondary btn-lg ms-2">Servicios Turísticos</a>        
+              </div>
             </div>
         </div>
     </div>
-</section>
-
-<!-- Productos Destacados (feactured) con gradiente sunset -->
-<section class="featured-section py-5 sunset-gradient">
-    <div class="container">
-        <h2 class="section-title" style="color: white;">Productos Destacados</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="featured-product">
-                    <img src="../assets/coleccion-artesania-palma.png" alt="Artesanías en palma" class="img-fluid w-100">
-                    <div class="featured-overlay">
-                        <h3>Colección de Artesanías</h3>
-                        <p>Descubre nuestras artesanías hechas a mano por maestros artesanos</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="price">Desde $25.000</span>
-                            <a href="#products?category=artesanias" class="btn btn-primary btn-sm">Ver Colección</a>
+      
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+      
+    
+    <!-- Categorías -->
+    <section class="category-section">
+        <div class="container">
+            <h2 class="section-title mb-5">Explora por Categorías</h2>
+            <div class="row">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="category-item">
+                        <div class="category-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h4>Artesanías</h4>
+                        <p>Productos hechos a mano por artesanos locales</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="category-item">
+                        <div class="category-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h4>Gastronomía</h4>
+                        <p>Delicias y productos típicos de la región</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="category-item">
+                        <div class="category-icon">
+                            <i class="fas fa-umbrella-beach"></i>
+                        </div>
+                        <h4>Turismo</h4>
+                        <p>Experiencias únicas en el Caribe colombiano</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="category-item">
+                        <div class="category-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h4>Moda</h4>
+                        <p>Ropa y accesorios con estilo caribeño</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Productos Destacados (feactured) con gradiente sunset -->
+    <section class="featured-section py-5 sunset-gradient">
+        <div class="container">
+            <h2 class="section-title" style="color: rgb(255, 255, 255);">Productos Destacados</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="featured-product">
+                        <img src="../assets/coleccion-artesania-palma.png" alt="Artesanías en palma" class="img-fluid w-100">
+                        <div class="featured-overlay">
+                            <h3>Colección de Artesanías</h3>
+                            <p>Descubre nuestras artesanías hechas a mano por maestros artesanos</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">Desde $25.000</span>
+                                <a href="#products?category=artesanias" class="btn btn-primary btn-sm">Ver Colección</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="featured-product">
+                        <img src="../assets/experiencias-tour-manglares.png" alt="Tour por manglares" class="img-fluid w-100">
+                        <div class="featured-overlay">
+                            <h3>Experiencias Turísticas</h3>
+                            <p>Vive experiencias únicas con nuestros guías locales</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">Desde $80.000</span>
+                                <a href="#services" class="btn btn-primary btn-sm">Explorar Tours</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="featured-product">
-                    <img src="../assets/experiencias-tour-manglares.png" alt="Tour por manglares" class="img-fluid w-100">
-                    <div class="featured-overlay">
-                        <h3>Experiencias Turísticas</h3>
-                        <p>Vive experiencias únicas con nuestros guías locales</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="price">Desde $80.000</span>
-                            <a href="#services" class="btn btn-primary btn-sm">Explorar Tours</a>
-                        </div>
-                    </div>
-                </div>
+        </div>
+    </section>
+    
+    <!-- Productos Populares -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Productos Populares</h2>
+            <div class="row" id="popular-products">
+                <!-- Los productos populares se cargarán dinámicamente aquí -->
+            </div>
+            <div class="text-center mt-4">
+                <a href="#products" class="btn btn-primary">Ver Todos los Productos</a>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- Productos Populares -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="section-title">Productos Populares</h2>
-        <div class="row" id="popular-products">
-            <!-- Los productos populares se cargarán dinámicamente aquí -->
-        </div>
-        <div class="text-center mt-4">
-            <a href="#products" class="btn btn-primary">Ver Todos los Productos</a>
-        </div>
-    </div>
-</section>
-
-<!-- Servicios Turísticos Destacados -->
-<section class="py-5 beach-gradient">
-    <div class="container">
-        <h2 class="section-title" style="color: white;">Experiencias Turísticas</h2>
-        <div class="row" id="featured-services">
-            <!-- Los servicios destacados se cargarán dinámicamente aquí -->
-        </div>
-        <div class="text-center mt-4">
-            <a href="#services" class="btn btn-secondary">Ver Todas las Experiencias</a>
-        </div>
-    </div>
-</section>
-
-<!-- Testimonios con gradiente -->
-<section class="testimonial-section gradient-section">
-    <div class="container">
-        <h2 class="section-title" style="color: white;">Lo que dicen nuestros clientes</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        "Encontré productos artesanales increíbles que no había visto en ningún otro lugar. La calidad es excepcional y me encanta apoyar a artesanos locales."
-                    </div>
-                    <div class="testimonial-author">María Rodríguez, Bogotá</div>
-                </div>
+    </section>
+    
+    <!-- Servicios Turísticos Destacados -->
+    <section class="py-5 beach-gradient">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Experiencias Turísticas</h2>
+            <div class="row" id="featured-services">
+                <!-- Los servicios destacados se cargarán dinámicamente aquí -->
             </div>
-            <div class="col-md-4">
-                    <div class="testimonial-card">
-                        <div class="testimonial-text">
-                            "Los tours que reservé a través de CaribeTienda fueron la mejor parte de mi viaje. Guías locales con un conocimiento profundo de la región y experiencias auténticas."
-                        </div>
-                        <div class="testimonial-author">Juan Pérez, Medellín</div>
-                    </div>
-                </div>
+            <div class="text-center mt-4">
+                <a href="#services" class="btn btn-secondary">Ver Todas las Experiencias</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonios con gradiente -->
+    <section class="testimonial-section gradient-section">
+        <div class="container">
+            <h2 class="section-title p-5" style="color: rgb(255, 255, 255);">Lo que dicen nuestros clientes</h2>
+            <div class="row">
                 <div class="col-md-4">
                     <div class="testimonial-card">
                         <div class="testimonial-text">
-                            "Como microempresaria, esta plataforma me ha permitido llegar a clientes que nunca hubiera imaginado. Mi negocio ha crecido significativamente."
+                            "Encontré productos artesanales increíbles que no había visto en ningún otro lugar. La calidad es excepcional y me encanta apoyar a artesanos locales."
                         </div>
-                        <div class="testimonial-author">Ana Gómez, Cartagena</div>
+                        <div class="testimonial-author">María Rodríguez, Bogotá</div>
                     </div>
                 </div>
+                <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">
+                                "Los tours que reservé a través de CaribeTienda fueron la mejor parte de mi viaje. Guías locales con un conocimiento profundo de la región y experiencias auténticas."
+                            </div>
+                            <div class="testimonial-author">Juan Pérez, Medellín</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">
+                                "Como microempresaria, esta plataforma me ha permitido llegar a clientes que nunca hubiera imaginado. Mi negocio ha crecido significativamente."
+                            </div>
+                            <div class="testimonial-author">Ana Gómez, Cartagena</div>
+                        </div>
+                    </div>
+            </div>
         </div>
-    </div>
-</section>
-            
-            <!-- Para Inversionistas -->
-            <section class="investor-section py-5">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h2 class="section-title text-start">Para Inversionistas</h2>
-                            <p>Descubra oportunidades de inversión únicas en negocios locales del Caribe colombiano con gran potencial de crecimiento.</p>
-                            <ul class="investor-benefits">
-                                <li><i class="fas fa-check-circle text-success me-2"></i> Acceso directo a emprendedores con ideas innovadoras</li>
-                                <li><i class="fas fa-check-circle text-success me-2"></i> Reportes detallados de rendimiento y crecimiento</li>
-                                <li><i class="fas fa-check-circle text-success me-2"></i> Oportunidades para impulsar el desarrollo regional</li>
-                                <li><i class="fas fa-check-circle text-success me-2"></i> Asesoría especializada para inversiones estratégicas</li>
-                            </ul>
-                            <a href="#investors" class="btn btn-primary mt-3">Conocer Más</a>
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="/api/placeholder/600/400" alt="Oportunidades de inversión" class="img-fluid rounded shadow">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- Sección de Registro de Newsletter -->
-            <section class="newsletter-section py-5 tropical-pattern">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 text-center">
-                            <h2 class="section-title">Mantente Informado</h2>
-                            <p class="mb-4">Suscríbete a nuestro boletín para recibir información sobre nuevos productos, ofertas especiales y eventos en la región Caribe.</p>
-                            <form class="newsletter-form d-flex justify-content-center">
-                                <div class="input-group mb-3" style="max-width: 500px;">
-                                    <input type="email" class="form-control" placeholder="Tu correo electrónico" aria-label="Email address" required>
-                                    <button class="btn btn-primary" type="submit">Suscribirse</button>
-                                </div>
-                            </form>
+    </section>
+                
+                <!-- Para Inversionistas -->
+                <section class="investor-section py-5">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <h2 class="section-title text-start">Para Inversionistas</h2>
+                                <p>Descubra oportunidades de inversión únicas en negocios locales del Caribe colombiano con gran potencial de crecimiento.</p>
+                                <ul class="investor-benefits">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Acceso directo a emprendedores con ideas innovadoras</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Reportes detallados de rendimiento y crecimiento</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Oportunidades para impulsar el desarrollo regional</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Asesoría especializada para inversiones estratégicas</li>
+                                </ul>
+                                <a href="#investors" class="btn btn-primary mt-3">Conocer Más</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="/api/placeholder/600/400" alt="Oportunidades de inversión" class="img-fluid rounded shadow">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+                
+                <!-- Sección de Registro de Newsletter -->
+                <section class="newsletter-section py-5 tropical-pattern">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <h2 class="section-title">Mantente Informado</h2>
+                                <p class="mb-4">Suscríbete a nuestro boletín para recibir información sobre nuevos productos, ofertas especiales y eventos en la región Caribe.</p>
+                                <form class="newsletter-form d-flex justify-content-center">
+                                    <div class="input-group mb-3" style="max-width: 500px;">
+                                        <input type="email" class="form-control" placeholder="Tu correo electrónico" aria-label="Email address" required>
+                                        <button class="btn btn-primary" type="submit">Suscribirse</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
